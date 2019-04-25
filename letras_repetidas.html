@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Letras repetidas</title>
+</head>
+<body>
+    <script>
+        //Fase 1
+        var name1 = ["J", "E", "S", "U", "S"];
+        for (i = 0; i < name1.length; i++) {
+            console.log(name1[i]);
+        }
+
+        //Fase 2
+        /*
+        var name2 = ["J", "E", "1", "S", "U", "S"];
+        for (i = 0; i < name2.length; i++) {
+            if (name2[i].search(/\d/) === 0) {
+                console.log('Els noms de persones no contenen el número: ' + name2[i]);
+            } else if (name2[i].search(/[aeiou]/i) === 0) {
+                console.log('He trobat la VOCAL: ' + name2[i]);
+            } else {
+                console.log('He trobat la CONSONTANT: ' + name2[i]);
+            }
+        }
+        */
+
+        //Fase 3
+        /*
+        var name3 = ["J", "E", "S", "U", "S"];
+        var mapName = {};
+        for (i = 0; i < name3.length; i++) {
+            var mapNameKeys = Object.getOwnPropertyNames(mapName);
+            if (mapNameKeys.includes(name3[i])) {
+                Object.defineProperty(mapName, name3[i], {value : mapName[name3[i]] + 1});
+            } else {
+                Object.defineProperty(mapName, name3[i], {value: 1, enumerable: true, configurable: true});
+            }
+        }
+        console.log(mapName);
+        */
+
+        //Fase 4
+        /*
+        var name4 = ["J", "E", "S", "U", "S"];
+        var surname4 =["L", "O", "P", "E", "Z"];
+        var fullname = [];
+        name4.push(" ");
+        fullName = name4.concat(surname4);
+        console.log(fullName);
+        */
+    </script>
+</body>
+</html>
